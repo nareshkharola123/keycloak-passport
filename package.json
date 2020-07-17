@@ -3,8 +3,10 @@
   "version": "1.0.2",
   "description": "Flexible Keycloak Passport strategy (with multi-realm support) by EXL Inc.",
   "main": "index.js",
+  "types": "@type/keycloak-passport",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,11 @@
   },
   "homepage": "https://github.com/exlinc/keycloak-passport#readme",
   "dependencies": {
+    "@types/node": "^14.0.23",
+    "@types/passport-oauth2": "^1.4.9",
     "passport-oauth2": "^1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.6"
   }
 }
